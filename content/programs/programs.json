@@ -1,0 +1,56 @@
+[
+  {
+    "slug": "health-and-wellbeing",
+    "title": "Accessible Health and Well-Being Education",
+    "focusArea": "Health and Well-Being Education",
+    "summary": "Youth-led health literacy sessions, peer support, and referrals that remove barriers to quality care.",
+    "problem": "Young people with disabilities face inaccessible health information, stigma, and limited youth-friendly services.",
+    "activities": [
+      "Accessible health education workshops with captioning and sign language",
+      "Peer support circles and wellness coaching",
+      "Referral pathways to inclusive health facilities"
+    ],
+    "audience": [
+      "Youth with disabilities (15-30)",
+      "Caregivers and community health workers"
+    ],
+    "outcomes": [
+      "Increased health knowledge and self-advocacy",
+      "Improved confidence in accessing services",
+      "Stronger community support networks"
+    ],
+    "howToJoin": [
+      "Register through the Get Involved form",
+      "Follow our community outreach schedule",
+      "Partner as a health service provider"
+    ],
+    "coverImage": "/images/placeholder.svg"
+  },
+  {
+    "slug": "economic-empowerment",
+    "title": "Economic Empowerment and Livelihood Skills",
+    "focusArea": "Economic Empowerment and Livelihood Skills",
+    "summary": "Skills training, mentorship, and access to inclusive employment opportunities for youth with disabilities.",
+    "problem": "Limited access to inclusive employment and capital keeps many youth with disabilities out of stable livelihoods.",
+    "activities": [
+      "Market-aligned vocational training",
+      "Entrepreneurship coaching and micro-grants",
+      "Private sector partnerships for inclusive hiring"
+    ],
+    "audience": [
+      "Youth with disabilities seeking livelihoods",
+      "Employers and private sector partners"
+    ],
+    "outcomes": [
+      "Increased income-generating opportunities",
+      "Expanded networks for inclusive employment",
+      "Sustainable small enterprises"
+    ],
+    "howToJoin": [
+      "Apply via the Programs page",
+      "Join mentorship cohorts",
+      "Employ a youth with disability"
+    ],
+    "coverImage": "/images/placeholder.svg"
+  }
+]

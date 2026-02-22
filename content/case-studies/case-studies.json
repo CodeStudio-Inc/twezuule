@@ -1,0 +1,16 @@
+[
+  {
+    "id": "case-1",
+    "title": "Inclusive Health Outreach in Wakiso",
+    "summary": "A youth-led outreach delivered accessible health information to over 300 participants in two months.",
+    "location": "Wakiso District",
+    "outcome": "85% of participants reported increased confidence in accessing health services."
+  },
+  {
+    "id": "case-2",
+    "title": "Livelihoods Pathway for New Entrepreneurs",
+    "summary": "A mentorship cohort supported youth entrepreneurs with training, tools, and market linkages.",
+    "location": "Kampala",
+    "outcome": "18 youth-led enterprises launched with ongoing peer support."
+  }
+]

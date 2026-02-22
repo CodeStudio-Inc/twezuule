@@ -1,8 +1,27 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #09233c;
+  --surface: #ffffff;
+  --muted: #475569;
+  --border: #e2e8f0;
+  --focus: #07bab7;
+  --radius: 16px;
+  --brand-50: #e6faf9;
+  --brand-100: #c3f2f1;
+  --brand-200: #98e7e5;
+  --brand-300: #66dcd8;
+  --brand-400: #33d0c8;
+  --brand-500: #07bab7;
+  --brand-600: #05a79c;
+  --brand-700: #058c7e;
+  --accent-500: #05bf86;
+  --accent-600: #04a874;
+  --navy-900: #09233c;
+  color-scheme: light;
 }
 
 @theme inline {
@@ -12,15 +31,109 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
+  background: #f8fffe;
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  line-height: 1.7;
+}
+
+* {
+  border-color: var(--border);
+}
+
+/* Brand color utility overrides */
+.bg-brand-50 {
+  background-color: var(--brand-50) !important;
+}
+
+.bg-brand-500 {
+  background-color: var(--brand-500) !important;
+}
+
+.bg-brand-600 {
+  background-color: var(--brand-600) !important;
+}
+
+.bg-accent-500 {
+  background-color: var(--accent-500) !important;
+}
+
+.bg-accent-600 {
+  background-color: var(--accent-600) !important;
+}
+
+.text-brand-500 {
+  color: var(--brand-500) !important;
+}
+
+.text-brand-600 {
+  color: var(--brand-600) !important;
+}
+
+.text-brand-700 {
+  color: var(--brand-700) !important;
+}
+
+.text-accent-500 {
+  color: var(--accent-500) !important;
+}
+
+.text-accent-600 {
+  color: var(--accent-600) !important;
+}
+
+.text-navy-900 {
+  color: var(--navy-900) !important;
+}
+
+a {
+  color: inherit;
+}
+
+.text-slate-900 {
+  color: #09233c;
+}
+
+.text-slate-800 {
+  color: #0b2a45;
+}
+
+*:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: absolute;
+  left: 0.75rem;
+  top: -200%;
+  z-index: 50;
+  padding: 0.75rem 1rem;
+  background: var(--foreground);
+  color: #fff;
+  border-radius: 999px;
+}
+
+.skip-link:focus {
+  top: 0.75rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
 }

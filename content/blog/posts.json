@@ -1,0 +1,86 @@
+[
+  {
+    "slug": "inclusive-health-literacy",
+    "title": "Inclusive Health Literacy Starts With Access",
+    "excerpt": "Accessible health information empowers youth with disabilities to make informed choices and advocate for better services.",
+    "date": "2026-02-05",
+    "category": "Health",
+    "tags": ["Health", "Advocacy"],
+    "author": "Twezuule Foundation",
+    "coverImage": "/images/placeholder.svg",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Young people with disabilities deserve health information in formats they can use. We co-design sessions with youth leaders to ensure language, format, and delivery are accessible." 
+      },
+      {
+        "type": "list",
+        "items": [
+          "Sign language interpretation and captioning",
+          "Braille and large-print summaries",
+          "Peer-led discussion spaces"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "When information is accessible, youth can make choices about their health with confidence and dignity." 
+      }
+    ]
+  },
+  {
+    "slug": "livelihoods-with-dignity",
+    "title": "Livelihoods With Dignity: Skills for Economic Independence",
+    "excerpt": "Economic empowerment programs build sustainable income pathways that value talent, resilience, and leadership.",
+    "date": "2026-01-22",
+    "category": "Livelihoods",
+    "tags": ["Livelihoods", "Talent"],
+    "author": "Twezuule Foundation",
+    "coverImage": "/images/placeholder.svg",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "We provide skills training and mentorship that match local market opportunities. Participants co-create their learning plans and receive ongoing support." 
+      },
+      {
+        "type": "quote",
+        "text": "Economic independence is about choice, security, and the power to shape your future." 
+      },
+      {
+        "type": "list",
+        "items": [
+          "Entrepreneurship coaching",
+          "Inclusive employment readiness",
+          "Access to startup toolkits"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "youth-leadership-for-change",
+    "title": "Youth Leadership That Shapes Policy",
+    "excerpt": "Civic participation is stronger when youth with disabilities lead policy conversations and community decisions.",
+    "date": "2026-01-08",
+    "category": "Leadership",
+    "tags": ["Leadership", "Advocacy"],
+    "author": "Twezuule Foundation",
+    "coverImage": "/images/placeholder.svg",
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Twezuule supports youth leaders to engage local councils, health boards, and community platforms. We invest in leadership skills and accessible civic spaces." 
+      },
+      {
+        "type": "list",
+        "items": [
+          "Leadership bootcamps",
+          "Policy dialogues with duty-bearers",
+          "Youth-led community actions"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "When youth lead, policies and services become more inclusive and responsive." 
+      }
+    ]
+  }
+]

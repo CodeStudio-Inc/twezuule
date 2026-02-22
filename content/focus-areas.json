@@ -1,0 +1,127 @@
+[
+  {
+    "slug": "health-well-being",
+    "title": "Health and Well-Being Education",
+    "description": "Accessible health information, peer support, and youth-friendly services that respect dignity and choice.",
+    "programs": [
+      {
+        "title": "Accessible Health Literacy",
+        "summary": "Youth-led health education sessions with sign language, captioning, and easy-to-read formats.",
+        "projects": [
+          "Community health literacy caravans",
+          "Accessible SRHR information hubs",
+          "Mental well-being peer circles"
+        ]
+      },
+      {
+        "title": "Inclusive Health Services Linkages",
+        "summary": "Connecting young people to clinics and providers that practice inclusive, respectful care.",
+        "projects": [
+          "Youth-friendly clinic navigation",
+          "Provider disability inclusion training",
+          "Referral pathways with feedback loops"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "economic-empowerment",
+    "title": "Economic Empowerment and Livelihood Skills",
+    "description": "Skills training, entrepreneurship, and inclusive employment pathways that build long-term independence.",
+    "programs": [
+      {
+        "title": "Skills for Inclusive Livelihoods",
+        "summary": "Market-aligned skills training co-designed with youth leaders and employers.",
+        "projects": [
+          "Inclusive vocational bootcamps",
+          "Entrepreneurship coaching labs",
+          "Financial literacy for youth entrepreneurs"
+        ]
+      },
+      {
+        "title": "Private Sector Employment Pathways",
+        "summary": "Partnerships with employers to increase inclusive hiring and workplace accommodations.",
+        "projects": [
+          "Inclusive hiring toolkits",
+          "Employer mentorship pairings",
+          "Internship and apprenticeship placements"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "civic-participation",
+    "title": "Civic Participation and Leadership",
+    "description": "Leadership development and civic engagement that centers youth voices in community decision-making.",
+    "programs": [
+      {
+        "title": "Youth Leadership Labs",
+        "summary": "Leadership development, public speaking, and advocacy skills for young people with disabilities.",
+        "projects": [
+          "Youth leadership academies",
+          "Community dialogue facilitation",
+          "Leadership mentorship circles"
+        ]
+      },
+      {
+        "title": "Civic Engagement Pathways",
+        "summary": "Accessible civic education and participation opportunities for youth-led action.",
+        "projects": [
+          "Inclusive civic education sessions",
+          "Youth council participation",
+          "Local community action projects"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "policy-advocacy",
+    "title": "Policy Advocacy and Social Inclusion",
+    "description": "Advocacy for rights, inclusive policies, and barrier-free services in public and private spaces.",
+    "programs": [
+      {
+        "title": "Rights-Based Advocacy",
+        "summary": "Evidence gathering, storytelling, and policy influence led by youth with disabilities.",
+        "projects": [
+          "Policy evidence labs",
+          "Youth-led advocacy campaigns",
+          "Stakeholder policy roundtables"
+        ]
+      },
+      {
+        "title": "Inclusive Systems Strengthening",
+        "summary": "Improving inclusion in schools, health systems, and local governance.",
+        "projects": [
+          "Accessibility audits",
+          "Inclusive budgeting advocacy",
+          "Community inclusion scorecards"
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "talent-development",
+    "title": "Talent Development and Capacity Building",
+    "description": "Mentorship and creative opportunities that recognize talents and grow confidence and skills.",
+    "programs": [
+      {
+        "title": "Creative Expression and Talent",
+        "summary": "Arts, sports, and creative programs that elevate youth talents and stories.",
+        "projects": [
+          "Inclusive arts showcases",
+          "Creative skills mentorships",
+          "Digital storytelling labs"
+        ]
+      },
+      {
+        "title": "Capacity Building for Youth Leaders",
+        "summary": "Skills, confidence, and networks for youth to lead in their communities.",
+        "projects": [
+          "Leadership coaching cohorts",
+          "Assistive technology training",
+          "Peer-to-peer capacity exchanges"
+        ]
+      }
+    ]
+  }
+]
