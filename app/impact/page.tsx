@@ -68,7 +68,7 @@ export default function ImpactPage() {
         </Container>
       </Section>
 
-      <Section className="bg-brand-50">
+      <Section className="bg-brand-50/40">
         <Container>
           <h2 className="text-2xl font-bold text-slate-900">Case studies</h2>
           <div className="mt-6 grid gap-6 md:grid-cols-2">

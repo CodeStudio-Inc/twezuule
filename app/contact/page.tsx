@@ -37,7 +37,7 @@ export default function ContactPage() {
                 <p>Phone: +256 700 000 000 (placeholder)</p>
               </div>
               <Card className="mt-6">
-                <div className="flex h-48 items-center justify-center rounded-lg border border-dashed border-slate-300 text-sm text-slate-500">
+                <div className="flex h-56 items-center justify-center rounded-xl border border-dashed border-slate-300 bg-slate-50 text-sm text-slate-500">
                   Map placeholder
                 </div>
               </Card>

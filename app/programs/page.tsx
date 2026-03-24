@@ -42,7 +42,7 @@ export default function ProgramsPage() {
         </Container>
       </Section>
 
-      <Section className="bg-brand-50">
+      <Section className="bg-brand-50/40">
         <Container>
           <h2 className="text-2xl font-bold text-slate-900">All focus areas</h2>
           <p className="mt-3 text-sm text-slate-600">
@@ -55,7 +55,7 @@ export default function ProgramsPage() {
                 <p className="mt-3 text-sm text-slate-600">{area.description}</p>
                 <Link
                   href={`/focus-areas/${area.slug}`}
-                  className="mt-4 inline-flex text-sm font-semibold text-brand-700"
+                  className="mt-4 inline-flex rounded-full border border-brand-200 px-4 py-1.5 text-sm font-semibold text-brand-700 hover:bg-brand-50"
                 >
                   Learn more
                 </Link>

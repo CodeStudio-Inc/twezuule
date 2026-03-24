@@ -36,14 +36,14 @@ export default function PartnershipForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="space-y-4" noValidate>
+    <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 rounded-2xl border border-slate-200 bg-white p-5" noValidate>
       <div>
         <label htmlFor="partner-organization" className="text-sm font-semibold text-slate-700">
           Organization
         </label>
         <input
           id="partner-organization"
-          className="mt-2 w-full rounded-lg border border-slate-200 px-3 py-2"
+          className="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-2.5"
           {...register("organization")}
         />
         {errors.organization ? (
@@ -56,10 +56,12 @@ export default function PartnershipForm() {
         </label>
         <input
           id="partner-contact"
-          className="mt-2 w-full rounded-lg border border-slate-200 px-3 py-2"
+          className="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-2.5"
           {...register("contactName")}
         />
-        {errors.contactName ? <p className="mt-1 text-xs text-red-600">{errors.contactName.message}</p> : null}
+        {errors.contactName ? (
+          <p className="mt-1 text-xs text-red-600">{errors.contactName.message}</p>
+        ) : null}
       </div>
       <div>
         <label htmlFor="partner-email" className="text-sm font-semibold text-slate-700">
@@ -68,10 +70,12 @@ export default function PartnershipForm() {
         <input
           id="partner-email"
           type="email"
-          className="mt-2 w-full rounded-lg border border-slate-200 px-3 py-2"
+          className="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-2.5"
           {...register("email")}
         />
-        {errors.email ? <p className="mt-1 text-xs text-red-600">{errors.email.message}</p> : null}
+        {errors.email ? (
+          <p className="mt-1 text-xs text-red-600">{errors.email.message}</p>
+        ) : null}
       </div>
       <div>
         <label htmlFor="partner-interest" className="text-sm font-semibold text-slate-700">
@@ -79,10 +83,12 @@ export default function PartnershipForm() {
         </label>
         <input
           id="partner-interest"
-          className="mt-2 w-full rounded-lg border border-slate-200 px-3 py-2"
+          className="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-2.5"
           {...register("interest")}
         />
-        {errors.interest ? <p className="mt-1 text-xs text-red-600">{errors.interest.message}</p> : null}
+        {errors.interest ? (
+          <p className="mt-1 text-xs text-red-600">{errors.interest.message}</p>
+        ) : null}
       </div>
       <div>
         <label htmlFor="partner-message" className="text-sm font-semibold text-slate-700">
@@ -91,14 +97,16 @@ export default function PartnershipForm() {
         <textarea
           id="partner-message"
           rows={4}
-          className="mt-2 w-full rounded-lg border border-slate-200 px-3 py-2"
+          className="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-2.5"
           {...register("message")}
         />
-        {errors.message ? <p className="mt-1 text-xs text-red-600">{errors.message.message}</p> : null}
+        {errors.message ? (
+          <p className="mt-1 text-xs text-red-600">{errors.message.message}</p>
+        ) : null}
       </div>
       <button
         type="submit"
-        className="rounded-lg bg-brand-600 px-5 py-2.5 text-sm font-semibold text-white"
+        className="rounded-xl bg-brand-600 px-5 py-2.5 text-sm font-semibold text-white"
         disabled={isSubmitting}
       >
         {isSubmitting ? "Sending..." : "Submit partnership interest"}

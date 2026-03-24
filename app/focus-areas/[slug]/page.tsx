@@ -4,7 +4,7 @@ import Container from "@/components/ui/Container";
 import Section from "@/components/ui/Section";
 import Card from "@/components/ui/Card";
 import { focusAreas } from "@/lib/data";
-import { getFocusAreaDetailBySlug, getFocusAreasDetail } from "@/lib/content";
+import { getFocusAreaDetailBySlug } from "@/lib/content";
 
 export async function generateStaticParams() {
   return focusAreas.map((area) => ({ slug: area.slug }));

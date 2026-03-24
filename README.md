@@ -1,37 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Twezuule Foundation Website
 
-## Getting Started
+Modern, accessible, mobile-first NGO website for Twezuule Foundation (Uganda), a youth-driven and disability-led organization.
 
-First, run the development server:
+## Tech Stack
+
+- Next.js (App Router) + TypeScript
+- Tailwind CSS
+- Framer Motion (subtle, reduced-motion aware)
+- React Hook Form + Zod
+- JSON content layer for editable content
+
+## Run Locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Accessibility Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Skip-to-content link in global layout
+- Keyboard focus styles and semantic HTML
+- Reduced-motion support via CSS and Framer Motion
+- Accessible forms with labels, validation, and ARIA error messaging
+- Accessibility Settings widget:
+	- High contrast mode
+	- Larger text mode
+	- Preferences persisted via localStorage
 
-## Learn More
+## Content Editing (No Code Changes Required)
 
-To learn more about Next.js, take a look at the following resources:
+Edit JSON files under the content folder:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Blog posts: content/blog/posts.json
+- Programs: content/programs/programs.json
+- Focus area details: content/focus-areas.json
+- Case studies: content/case-studies/case-studies.json
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+After editing content, save files and refresh the site.
 
-## Deploy on Vercel
+## Key Routes
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- / (Home)
+- /about
+- /programs and /programs/[slug]
+- /focus-areas/[slug]
+- /impact
+- /get-involved
+- /donate
+- /news and /news/[slug]
+- /contact
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# twezuule
+## SEO
+
+- Global metadata with OpenGraph and Twitter cards
+- robots.txt via app/robots.ts
+- sitemap.xml via app/sitemap.ts

@@ -20,7 +20,7 @@ export default function AboutPage() {
 
       <Section>
         <Container>
-          <div className="grid gap-10 lg:grid-cols-2">
+          <div className="grid items-center gap-10 rounded-[var(--radius)] border border-slate-200 bg-white p-6 lg:grid-cols-2 lg:p-8">
             <div>
               <h2 className="text-2xl font-bold text-slate-900">Who we are</h2>
               <p className="mt-4 text-base text-slate-600">
@@ -46,15 +46,15 @@ export default function AboutPage() {
               alt="Youth leaders collaborating"
               width={560}
               height={420}
-              className="rounded-[var(--radius)]"
+              className="w-full rounded-[var(--radius)] border border-slate-200"
             />
           </div>
         </Container>
       </Section>
 
-      <Section className="bg-brand-50">
+      <Section className="bg-brand-50/50">
         <Container>
-          <div className="rounded-[var(--radius)] border border-brand-200 bg-brand-50 p-8">
+          <div className="rounded-[var(--radius)] border border-brand-200 bg-white p-8">
             <h2 className="text-xl font-bold text-brand-800">Disability-led & Youth-driven</h2>
             <p className="mt-3 text-sm text-brand-800">
               We believe in leadership by those most impacted. Our programs are co-designed and led by young people with disabilities, ensuring dignity, accessibility, and meaningful participation.
@@ -77,7 +77,7 @@ export default function AboutPage() {
         </Container>
       </Section>
 
-      <Section className="bg-brand-50">
+      <Section className="bg-brand-50/40">
         <Container>
           <h2 className="text-2xl font-bold text-slate-900">Leadership and Board</h2>
           <p className="mt-3 text-sm text-slate-600">

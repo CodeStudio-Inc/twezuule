@@ -38,17 +38,19 @@ export default function VolunteerForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="space-y-4" noValidate>
+    <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 rounded-2xl border border-slate-200 bg-white p-5" noValidate>
       <div>
         <label htmlFor="volunteer-name" className="text-sm font-semibold text-slate-700">
           Full name
         </label>
         <input
           id="volunteer-name"
-          className="mt-2 w-full rounded-lg border border-slate-200 px-3 py-2"
+          className="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-2.5"
           {...register("name")}
         />
-        {errors.name ? <p className="mt-1 text-xs text-red-600">{errors.name.message}</p> : null}
+        {errors.name ? (
+          <p className="mt-1 text-xs text-red-600">{errors.name.message}</p>
+        ) : null}
       </div>
       <div>
         <label htmlFor="volunteer-email" className="text-sm font-semibold text-slate-700">
@@ -57,10 +59,12 @@ export default function VolunteerForm() {
         <input
           id="volunteer-email"
           type="email"
-          className="mt-2 w-full rounded-lg border border-slate-200 px-3 py-2"
+          className="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-2.5"
           {...register("email")}
         />
-        {errors.email ? <p className="mt-1 text-xs text-red-600">{errors.email.message}</p> : null}
+        {errors.email ? (
+          <p className="mt-1 text-xs text-red-600">{errors.email.message}</p>
+        ) : null}
       </div>
       <div>
         <label htmlFor="volunteer-phone" className="text-sm font-semibold text-slate-700">
@@ -68,10 +72,12 @@ export default function VolunteerForm() {
         </label>
         <input
           id="volunteer-phone"
-          className="mt-2 w-full rounded-lg border border-slate-200 px-3 py-2"
+          className="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-2.5"
           {...register("phone")}
         />
-        {errors.phone ? <p className="mt-1 text-xs text-red-600">{errors.phone.message}</p> : null}
+        {errors.phone ? (
+          <p className="mt-1 text-xs text-red-600">{errors.phone.message}</p>
+        ) : null}
       </div>
       <div>
         <label htmlFor="volunteer-location" className="text-sm font-semibold text-slate-700">
@@ -79,10 +85,12 @@ export default function VolunteerForm() {
         </label>
         <input
           id="volunteer-location"
-          className="mt-2 w-full rounded-lg border border-slate-200 px-3 py-2"
+          className="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-2.5"
           {...register("location")}
         />
-        {errors.location ? <p className="mt-1 text-xs text-red-600">{errors.location.message}</p> : null}
+        {errors.location ? (
+          <p className="mt-1 text-xs text-red-600">{errors.location.message}</p>
+        ) : null}
       </div>
       <div>
         <label htmlFor="volunteer-interest" className="text-sm font-semibold text-slate-700">
@@ -90,10 +98,12 @@ export default function VolunteerForm() {
         </label>
         <input
           id="volunteer-interest"
-          className="mt-2 w-full rounded-lg border border-slate-200 px-3 py-2"
+          className="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-2.5"
           {...register("interest")}
         />
-        {errors.interest ? <p className="mt-1 text-xs text-red-600">{errors.interest.message}</p> : null}
+        {errors.interest ? (
+          <p className="mt-1 text-xs text-red-600">{errors.interest.message}</p>
+        ) : null}
       </div>
       <div>
         <label htmlFor="volunteer-availability" className="text-sm font-semibold text-slate-700">
@@ -101,7 +111,7 @@ export default function VolunteerForm() {
         </label>
         <input
           id="volunteer-availability"
-          className="mt-2 w-full rounded-lg border border-slate-200 px-3 py-2"
+          className="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-2.5"
           {...register("availability")}
         />
         {errors.availability ? (
@@ -115,13 +125,13 @@ export default function VolunteerForm() {
         <textarea
           id="volunteer-message"
           rows={4}
-          className="mt-2 w-full rounded-lg border border-slate-200 px-3 py-2"
+          className="mt-2 w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-2.5"
           {...register("message")}
         />
       </div>
       <button
         type="submit"
-        className="rounded-lg bg-brand-600 px-5 py-2.5 text-sm font-semibold text-white"
+        className="rounded-xl bg-brand-600 px-5 py-2.5 text-sm font-semibold text-white"
         disabled={isSubmitting}
       >
         {isSubmitting ? "Sending..." : "Submit volunteer interest"}

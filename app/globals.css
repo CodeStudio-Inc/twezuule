@@ -1,34 +1,46 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@config "../tailwind.config.ts";
 
 :root {
   --background: #ffffff;
-  --foreground: #09233c;
-  --surface: #ffffff;
-  --muted: #475569;
-  --border: #e2e8f0;
-  --focus: #07bab7;
-  --radius: 16px;
-  --brand-50: #e6faf9;
-  --brand-100: #c3f2f1;
-  --brand-200: #98e7e5;
-  --brand-300: #66dcd8;
-  --brand-400: #33d0c8;
-  --brand-500: #07bab7;
-  --brand-600: #05a79c;
-  --brand-700: #058c7e;
-  --accent-500: #05bf86;
-  --accent-600: #04a874;
-  --navy-900: #09233c;
+  --foreground: #0f172a;
+  --radius: 12px;
   color-scheme: light;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-manrope);
+  --font-mono: var(--font-sora);
+
+  /* Brand – teal */
+  --color-brand-50: #f0fdfa;
+  --color-brand-100: #ccfbf1;
+  --color-brand-200: #99f6e4;
+  --color-brand-300: #5eead4;
+  --color-brand-400: #2dd4bf;
+  --color-brand-500: #14b8a6;
+  --color-brand-600: #0d9488;
+  --color-brand-700: #0f766e;
+  --color-brand-800: #115e59;
+  --color-brand-900: #134e4a;
+
+  /* Accent – amber */
+  --color-accent-50: #fffbeb;
+  --color-accent-100: #fef3c7;
+  --color-accent-200: #fde68a;
+  --color-accent-300: #fcd34d;
+  --color-accent-400: #fbbf24;
+  --color-accent-500: #f59e0b;
+  --color-accent-600: #d97706;
+  --color-accent-700: #b45309;
+  --color-accent-800: #92400e;
+  --color-accent-900: #78350f;
+
+  /* Navy */
+  --color-navy-800: #1e293b;
+  --color-navy-900: #0f172a;
 }
 
 html {
@@ -36,104 +48,23 @@ html {
 }
 
 body {
-  background: #f8fffe;
+  background: #ffffff;
   color: var(--foreground);
-  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
-  line-height: 1.7;
+  font-family: var(--font-manrope), system-ui, sans-serif;
+  line-height: 1.6;
 }
 
-* {
-  border-color: var(--border);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-sora), system-ui, sans-serif;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
 }
 
-/* Brand color utility overrides */
-.bg-brand-50 {
-  background-color: var(--brand-50) !important;
-}
-
-.bg-brand-500 {
-  background-color: var(--brand-500) !important;
-}
-
-.bg-brand-600 {
-  background-color: var(--brand-600) !important;
-}
-
-.bg-accent-500 {
-  background-color: var(--accent-500) !important;
-}
-
-.bg-accent-600 {
-  background-color: var(--accent-600) !important;
-}
-
-.text-brand-500 {
-  color: var(--brand-500) !important;
-}
-
-.text-brand-600 {
-  color: var(--brand-600) !important;
-}
-
-.text-brand-700 {
-  color: var(--brand-700) !important;
-}
-
-.text-accent-500 {
-  color: var(--accent-500) !important;
-}
-
-.text-accent-600 {
-  color: var(--accent-600) !important;
-}
-
-.text-navy-900 {
-  color: var(--navy-900) !important;
-}
-
-a {
-  color: inherit;
-}
-
-.text-slate-900 {
-  color: #09233c;
-}
-
-.text-slate-800 {
-  color: #0b2a45;
-}
-
-*:focus-visible {
-  outline: 3px solid var(--focus);
-  outline-offset: 3px;
-}
-
-.skip-link {
-  position: absolute;
-  left: 0.75rem;
-  top: -200%;
-  z-index: 50;
-  padding: 0.75rem 1rem;
-  background: var(--foreground);
-  color: #fff;
-  border-radius: 999px;
-}
-
-.skip-link:focus {
-  top: 0.75rem;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.001ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.001ms !important;
-    scroll-behavior: auto !important;
-  }
+::selection {
+  background: rgba(13, 148, 136, 0.25);
 }

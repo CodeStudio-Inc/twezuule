@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Manrope, Sora } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import WhatsAppButton from "@/components/layout/WhatsAppButton";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const bodyFont = Manrope({
+  variable: "--font-manrope",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const headingFont = Sora({
+  variable: "--font-sora",
   subsets: ["latin"],
 });
 
@@ -48,12 +48,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <a href="#main-content" className="skip-link">
-          Skip to content
-        </a>
+      <body className={`${bodyFont.variable} ${headingFont.variable} antialiased`}>
         <Navbar />
-        <main id="main-content" className="min-h-screen">
+        <main id="main-content" className="min-h-screen overflow-x-clip">
           {children}
         </main>
         <Footer />

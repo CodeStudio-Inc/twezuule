@@ -42,7 +42,7 @@ export default function NewsPage() {
                 </div>
                 <Link
                   href={`/news/${post.slug}`}
-                  className="mt-4 text-sm font-semibold text-brand-700"
+                  className="mt-4 inline-flex w-fit rounded-full border border-brand-200 px-4 py-1.5 text-sm font-semibold text-brand-700 hover:bg-brand-50"
                 >
                   Read more
                 </Link>

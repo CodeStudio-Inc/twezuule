@@ -1,21 +1,20 @@
 import { stats } from "@/lib/data";
-import Card from "@/components/ui/Card";
 import Container from "@/components/ui/Container";
-import Section from "@/components/ui/Section";
+import Reveal from "@/components/ui/Reveal";
 
 export default function Stats() {
   return (
-    <Section>
+    <section className="bg-brand-600 py-14">
       <Container>
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <Reveal className="grid grid-cols-2 gap-8 lg:grid-cols-4">
           {stats.map((stat) => (
-            <Card key={stat.label} className="border-accent-100 text-center">
-              <p className="text-3xl font-bold text-brand-500">{stat.value}</p>
-              <p className="mt-2 text-sm text-slate-600">{stat.label}</p>
-            </Card>
+            <div key={stat.label} className="text-center">
+              <p className="text-4xl font-bold text-white">{stat.value}</p>
+              <p className="mt-1 text-sm text-white/70">{stat.label}</p>
+            </div>
           ))}
-        </div>
+        </Reveal>
       </Container>
-    </Section>
+    </section>
   );
 }
