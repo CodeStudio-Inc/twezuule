@@ -183,8 +183,8 @@ export default function ProgramDetail({
               </div>
             </div>
             <div className="mt-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-              {program.gallery.map((image) => (
-                <div key={image} className="overflow-hidden rounded-[var(--radius)] bg-white shadow-sm">
+              {program.gallery.map((image, index) => (
+                <div key={`${image}-${index}`} className="overflow-hidden rounded-[var(--radius)] bg-white shadow-sm">
                   <Image
                     src={image}
                     alt={`${program.title} program gallery image`}
