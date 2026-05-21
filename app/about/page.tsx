@@ -51,8 +51,8 @@ export default function AboutPage() {
               </div>
             </div>
             <Image
-              src="/images/placeholder.svg"
-              alt="Youth leaders collaborating"
+              src="https://res.cloudinary.com/dunddp3iw/image/upload/v1771272481/WhatsApp_Image_2026-02-16_at_8.13.51_PM_csjfuv.jpg"
+              alt="Twezuule Foundation youth inclusion program"
               width={560}
               height={420}
               className="w-full rounded-[var(--radius)] border border-slate-200"
