@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Users, HeartHandshake, Scale, Handshake, Sparkles } from "lucide-react";
 import PageHeader from "@/components/ui/PageHeader";
 import Container from "@/components/ui/Container";
 import Section from "@/components/ui/Section";
@@ -9,12 +10,20 @@ export const metadata = {
   title: "About",
 };
 
+const valueIcons = {
+  Inclusion: Users,
+  Equity: Scale,
+  Empowerment: Sparkles,
+  "Dignity & Respect": HeartHandshake,
+  Collaboration: Handshake,
+};
+
 export default function AboutPage() {
   return (
     <div>
       <PageHeader
         title="About Twezuule Foundation"
-        description="A youth-driven, disability-led organization championing rights, well-being, and opportunity for young people with disabilities in Uganda."
+        description="A youth-driven disability rights and inclusion organization dedicated to implementing interventions that address the unique needs and challenges faced by a diverse group of young people with disabilities."
         breadcrumbs={[{ label: "Home", href: "/" }, { label: "About" }]}
       />
 
@@ -24,7 +33,7 @@ export default function AboutPage() {
             <div>
               <h2 className="text-2xl font-bold text-slate-900">Who we are</h2>
               <p className="mt-4 text-base text-slate-600">
-                Twezuule Foundation is a youth-driven, disability-led organization empowering young people with disabilities to advocate for their rights and access health and livelihood opportunities.
+                Twezuule Foundation is a youth-driven disability rights and inclusion organization dedicated to implementing interventions that address the unique needs and challenges faced by a diverse group of young people with disabilities.
               </p>
               <div className="mt-6 space-y-4">
                 <div>
@@ -36,7 +45,7 @@ export default function AboutPage() {
                 <div>
                   <h3 className="text-sm font-semibold text-slate-900">Mission</h3>
                   <p className="text-sm text-slate-600">
-                    To champion the rights, well-being, and empowerment of youth with disabilities by promoting access to health and livelihood opportunities, amplifying their voices in decision-making, and fostering a supportive and inclusive society.
+                    To champion the rights, well-being, and empowerment of youth with disabilities by promoting access to health, livelihood, and leadership opportunities while advancing inclusion in every community.
                   </p>
                 </div>
               </div>
@@ -65,38 +74,26 @@ export default function AboutPage() {
 
       <Section>
         <Container>
-          <h2 className="text-2xl font-bold text-slate-900">Our values</h2>
-          <div className="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-            {values.map((value) => (
-              <Card key={value.title}>
-                <h3 className="text-lg font-semibold text-slate-900">{value.title}</h3>
-                <p className="mt-3 text-sm text-slate-600">{value.description}</p>
-              </Card>
-            ))}
-          </div>
-        </Container>
-      </Section>
-
-      <Section className="bg-brand-50/40">
-        <Container>
-          <h2 className="text-2xl font-bold text-slate-900">Leadership and Board</h2>
-          <p className="mt-3 text-sm text-slate-600">
-            Meet the youth leaders and advisors guiding Twezuule Foundation.
+          <h2 className="text-2xl font-bold text-slate-900">Core values</h2>
+          <p className="mt-3 max-w-2xl text-sm text-slate-600">
+            Our work is anchored in principles that reinforce dignity, equity, and lasting inclusion.
           </p>
-          <div className="mt-6 grid gap-6 md:grid-cols-3">
-            {Array.from({ length: 3 }).map((_, index) => (
-              <Card key={index}>
-                <Image
-                  src="/images/team-placeholder.svg"
-                  alt="Team member placeholder"
-                  width={320}
-                  height={200}
-                  className="rounded-lg"
-                />
-                <h3 className="mt-4 text-base font-semibold text-slate-900">Leader Name</h3>
-                <p className="text-sm text-slate-500">Role / Title</p>
-              </Card>
-            ))}
+          <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-5">
+            {values.map((value) => {
+              const Icon = valueIcons[value.title as keyof typeof valueIcons] || Users;
+              return (
+                <Card
+                  key={value.title}
+                  className="group border border-slate-200 bg-slate-50 transition hover:-translate-y-1 hover:border-accent-200"
+                >
+                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-600/10 text-brand-600 transition group-hover:bg-brand-600/15">
+                    <Icon className="h-6 w-6" aria-hidden="true" />
+                  </div>
+                  <h3 className="mt-5 text-lg font-semibold text-slate-900">{value.title}</h3>
+                  <p className="mt-3 text-sm text-slate-600">{value.description}</p>
+                </Card>
+              );
+            })}
           </div>
         </Container>
       </Section>

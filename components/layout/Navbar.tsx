@@ -21,16 +21,16 @@ export default function Navbar() {
     <header className="sticky top-0 z-40 w-full bg-white/95 shadow-sm backdrop-blur-xl">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2.5 sm:px-6 lg:px-8" aria-label="Main">
         {/* Logo */}
-        <Link href="/" className="flex shrink-0 items-center gap-2.5">
-          <Image
-            src="/images/twezuule-logo.jpg"
-            alt="Twezuule Foundation logo"
-            width={72}
-            height={72}
-            className="h-10 w-10 rounded-xl object-cover"
-            priority
-          />
-          <span className="hidden text-sm font-bold text-slate-900 sm:inline">Twezuule</span>
+<Link href="/" className="flex shrink-0 items-center gap-3">
+            <Image
+              src="/images/twezuule-logo.jpg"
+              alt="Twezuule Foundation logo"
+              width={72}
+              height={72}
+              className="h-10 w-10 rounded-xl object-cover"
+              priority
+            />
+            <span className="text-sm font-bold text-slate-900">Twezuule Foundation</span>
         </Link>
 
         {/* Desktop tabs */}
@@ -100,7 +100,15 @@ export default function Navbar() {
         </div>
 
         {/* Desktop CTA */}
-        <div className="hidden items-center gap-2 md:flex">
+        <div className="hidden items-center gap-4 md:flex">
+          <div className="flex items-center gap-3 border-l border-slate-200 pl-4 text-xs font-medium text-slate-600">
+            <Link href="/board" className="transition hover:text-brand-600">
+              Board
+            </Link>
+            <Link href="/partners" className="transition hover:text-brand-600">
+              Partners
+            </Link>
+          </div>
           <Button href="/donate" variant="secondary" className="!px-4 !py-2 !text-xs">
             Donate
           </Button>
@@ -147,6 +155,21 @@ export default function Navbar() {
                 {area.title}
               </Link>
             ))}
+            <p className="mt-3 px-3 text-xs font-semibold uppercase tracking-wide text-slate-400">Organization</p>
+            <Link
+              href="/board"
+              className="rounded-lg px-3 py-2 text-sm text-slate-600 transition hover:bg-slate-100"
+              onClick={closeMenus}
+            >
+              Board Members
+            </Link>
+            <Link
+              href="/partners"
+              className="rounded-lg px-3 py-2 text-sm text-slate-600 transition hover:bg-slate-100"
+              onClick={closeMenus}
+            >
+              Partners
+            </Link>
             <div className="mt-3 flex gap-2">
               <Button href="/donate" variant="secondary" className="flex-1">
                 Donate

@@ -18,14 +18,14 @@ export default function FocusAreasGrid() {
         <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {focusAreas.map((area, index) => (
             <Reveal key={area.slug} delay={index * 0.05}>
-              <div className="h-full rounded-xl bg-white/10 p-6">
+              <div className="group h-full overflow-hidden rounded-3xl border border-white/10 bg-white/10 p-6 transition hover:border-accent-300 hover:bg-white/15">
                 <h3 className="text-lg font-semibold text-white">{area.title}</h3>
                 <p className="mt-3 text-sm text-white/70">{area.description}</p>
                 <Link
-                  href={`/focus-areas/${area.slug}`}
-                  className="mt-4 inline-flex text-sm font-semibold text-accent-400 hover:text-accent-300"
+                  href={area.route || `/focus-areas/${area.slug}`}
+                  className="mt-6 inline-flex text-sm font-semibold text-accent-400 transition hover:text-accent-300"
                 >
-                  Learn more \u2192
+                  Learn more →
                 </Link>
               </div>
             </Reveal>

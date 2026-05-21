@@ -1,56 +1,306 @@
 [
   {
     "slug": "health-and-wellbeing",
-    "title": "Accessible Health and Well-Being Education",
+    "title": "Health and Well-Being Education",
     "focusArea": "Health and Well-Being Education",
-    "summary": "Youth-led health literacy sessions, peer support, and referrals that remove barriers to quality care.",
-    "problem": "Young people with disabilities face inaccessible health information, stigma, and limited youth-friendly services.",
+    "summary": "Health and well-being are at the core of our mission to ensure that young people with disabilities live healthy, informed, and empowered lives.",
+    "problem": "Young people with disabilities often face inaccessible health information, stigma, and service barriers in sexual, reproductive, menstrual, and mental health.",
     "activities": [
-      "Accessible health education workshops with captioning and sign language",
-      "Peer support circles and wellness coaching",
-      "Referral pathways to inclusive health facilities"
+      "Co-designed SRHR and menstrual health dialogues",
+      "University peer support and wellness coaching",
+      "Digital awareness campaigns and inclusive outreach"
     ],
     "audience": [
-      "Youth with disabilities (15-30)",
-      "Caregivers and community health workers"
+      "Young people with disabilities",
+      "University students and youth leaders",
+      "Caregivers, educators, and health providers"
     ],
     "outcomes": [
-      "Increased health knowledge and self-advocacy",
-      "Improved confidence in accessing services",
-      "Stronger community support networks"
+      "Improved menstrual health awareness",
+      "Increased SRHR knowledge",
+      "Inclusive participation of both genders",
+      "Stronger support networks",
+      "Integration of mental health into programming"
     ],
     "howToJoin": [
       "Register through the Get Involved form",
-      "Follow our community outreach schedule",
+      "Join peer dialogues and campaign workshops",
       "Partner as a health service provider"
     ],
-    "coverImage": "/images/placeholder.svg"
+    "coverImage": "https://res.cloudinary.com/dunddp3iw/image/upload/v1771261298/WhatsApp_Image_2026-02-16_at_7.19.54_PM_jaefiu.jpg",
+    "heroImage": "https://res.cloudinary.com/dunddp3iw/image/upload/v1771261298/WhatsApp_Image_2026-02-16_at_7.19.54_PM_jaefiu.jpg",
+    "gallery": [
+      "https://res.cloudinary.com/dunddp3iw/image/upload/v1771261280/WhatsApp_Image_2026-02-16_at_7.19.41_PM_vvwzi2.jpg",
+      "https://res.cloudinary.com/dunddp3iw/image/upload/v1771261299/WhatsApp_Image_2026-02-16_at_7.19.55_PM_q6wnmd.jpg",
+      "https://res.cloudinary.com/dunddp3iw/image/upload/v1771272455/WhatsApp_Image_2026-02-16_at_10.44.52_PM_e7gqqd.jpg",
+      "https://res.cloudinary.com/dunddp3iw/image/upload/v1771261316/WhatsApp_Image_2026-02-16_at_7.20.07_PM_naiwcn.jpg"
+    ],
+    "stats": [
+      { "label": "Participants", "value": "137" },
+      { "label": "Females", "value": "91" },
+      { "label": "Males", "value": "46" },
+      { "label": "Impressions", "value": "1.4M" },
+      { "label": "People reached online", "value": "383,000" }
+    ],
+    "quote": "Health and well-being are at the core of our mission to ensure that young people with disabilities live healthy, informed, and empowered lives.",
+    "keyOutcomes": [
+      "Improved menstrual health awareness",
+      "Increased SRHR knowledge",
+      "Inclusive participation of both genders",
+      "Strengthened support networks",
+      "Integration of mental health services"
+    ],
+    "sections": [
+      {
+        "title": "Unique Periods Dialogues",
+        "description": "Safe, accessible forums for young people with disabilities to discuss menstrual health, dignity, and supportive care.",
+        "items": [
+          "Youth-led conversations on menstrual management",
+          "Accessible information in local languages",
+          "Barrier-free spaces for honest dialogue"
+        ],
+        "image": "https://res.cloudinary.com/dunddp3iw/image/upload/v1771261280/WhatsApp_Image_2026-02-16_at_7.19.41_PM_vvwzi2.jpg"
+      },
+      {
+        "title": "Preventing early pregnancies among university students",
+        "description": "Focused activities support students with disabilities to make informed choices and build resilience on campus.",
+        "items": [
+          "Campus SRHR education sessions",
+          "Mentorship with peer health advocates",
+          "Confidential referral pathways"
+        ],
+        "image": "https://res.cloudinary.com/dunddp3iw/image/upload/v1771261299/WhatsApp_Image_2026-02-16_at_7.19.55_PM_q6wnmd.jpg"
+      },
+      {
+        "title": "International Women’s Day activities",
+        "description": "Inclusive events and campaigns that highlight the leadership of women and girls with disabilities.",
+        "image": "https://res.cloudinary.com/dunddp3iw/image/upload/v1771272455/WhatsApp_Image_2026-02-16_at_10.44.52_PM_e7gqqd.jpg"
+      },
+      {
+        "title": "Digital campaign impact",
+        "description": "Online storytelling and awareness-raising that reached thousands with disability-inclusive SRHR messages.",
+        "items": [
+          "1.4 million impressions across platforms",
+          "Accessible digital content and audio shares",
+          "New online support networks for young people"
+        ],
+        "image": "https://res.cloudinary.com/dunddp3iw/image/upload/v1771261316/WhatsApp_Image_2026-02-16_at_7.20.07_PM_naiwcn.jpg"
+      }
+    ]
   },
   {
     "slug": "economic-empowerment",
     "title": "Economic Empowerment and Livelihood Skills",
     "focusArea": "Economic Empowerment and Livelihood Skills",
-    "summary": "Skills training, mentorship, and access to inclusive employment opportunities for youth with disabilities.",
-    "problem": "Limited access to inclusive employment and capital keeps many youth with disabilities out of stable livelihoods.",
+    "summary": "Economic independence is essential for dignity and self-reliance. Our programs equip young people with disabilities with practical skills, financial knowledge, and opportunities to build sustainable livelihoods.",
+    "problem": "Youth with disabilities face barriers to training, finance, and markets that limit their ability to earn and save with confidence.",
     "activities": [
-      "Market-aligned vocational training",
-      "Entrepreneurship coaching and micro-grants",
-      "Private sector partnerships for inclusive hiring"
+      "KAZO Special Persons with Disabilities initiative",
+      "Wakiso District livelihood trainings",
+      "Kansanga entrepreneurship and refugee settlement support"
     ],
     "audience": [
-      "Youth with disabilities seeking livelihoods",
-      "Employers and private sector partners"
+      "Young people with disabilities",
+      "Women, youth, and refugees",
+      "Community enterprise partners"
     ],
     "outcomes": [
+      "Improved financial literacy",
       "Increased income-generating opportunities",
-      "Expanded networks for inclusive employment",
-      "Sustainable small enterprises"
+      "Strengthened savings culture",
+      "Enhanced self-reliance",
+      "Inclusion of women, youth, and refugees"
     ],
     "howToJoin": [
-      "Apply via the Programs page",
-      "Join mentorship cohorts",
-      "Employ a youth with disability"
+      "Reach out via our contact page",
+      "Attend skills and entrepreneurship workshops",
+      "Join savings and mentorship circles"
     ],
-    "coverImage": "/images/placeholder.svg"
+    "coverImage": "https://placehold.co/1200x800?text=Economic+Empowerment&font=roboto",
+    "heroImage": "https://placehold.co/1200x800?text=Economic+Empowerment+and+Livelihood+Skills&font=roboto",
+    "sections": [
+      {
+        "title": "KAZO Special Persons with Disabilities initiative",
+        "description": "A targeted program building livelihoods through training, enterprise support, and local mentoring.",
+        "items": [
+          "Inclusive vocational training sessions",
+          "Micro-enterprise support and coaching",
+          "Peer-led financial skills classes"
+        ]
+      },
+      {
+        "title": "Wakiso District work",
+        "description": "Community-based activities in Wakiso strengthen income opportunities and link youth to markets.",
+        "items": [
+          "Market readiness workshops",
+          "Inclusive local business partnerships",
+          "Community savings circles"
+        ]
+      },
+      {
+        "title": "Kansanga activities",
+        "description": "Urban livelihood programs in Kansanga put creativity, technology, and mobility at the center of economic inclusion.",
+        "items": [
+          "Digital skills coaching",
+          "Safe entrepreneurship hubs",
+          "Peer support networks"
+        ]
+      },
+      {
+        "title": "Rhino Camp Refugee Settlement work",
+        "description": "Tailored livelihood support for refugee youth with disabilities, building resilience and dignity.",
+        "items": [
+          "Inclusive training sessions",
+          "Refugee-led enterprise support",
+          "Local market access partnerships"
+        ]
+      }
+    ],
+    "keyOutcomes": [
+      "Improved financial literacy",
+      "Increased income-generating opportunities",
+      "Strengthened savings culture",
+      "Enhanced self-reliance",
+      "Inclusion of women, youth, and refugees"
+    ]
+  },
+  {
+    "slug": "policy-advocacy",
+    "title": "Policy Advocacy and Social Inclusion",
+    "focusArea": "Policy Advocacy and Social Inclusion",
+    "summary": "Creating lasting change requires transforming systems and attitudes through evidence-based advocacy, partnerships, and youth leadership.",
+    "problem": "Systems remain inaccessible and exclusionary unless they are actively shaped by young people with disabilities and inclusive policy voices.",
+    "activities": [
+      "National advocacy partnerships",
+      "Youth Agents for Disability Inclusion (YADs)",
+      "Movement-building and policy dialogue"
+    ],
+    "audience": [
+      "Youth advocates and leaders",
+      "Civil society partners",
+      "Policymakers and service providers"
+    ],
+    "outcomes": [
+      "Stronger advocacy networks",
+      "More inclusive policy conversations",
+      "Youth-led movement momentum"
+    ],
+    "howToJoin": [
+      "Engage with our advocacy campaigns",
+      "Join the YADs network",
+      "Partner for inclusive policy change"
+    ],
+    "coverImage": "https://res.cloudinary.com/dunddp3iw/image/upload/v1771261310/WhatsApp_Image_2026-02-16_at_7.20.03_PM_y5yyww.jpg",
+    "heroImage": "https://res.cloudinary.com/dunddp3iw/image/upload/v1771261310/WhatsApp_Image_2026-02-16_at_7.20.03_PM_y5yyww.jpg",
+    "sections": [
+      {
+        "title": "Advocacy mission",
+        "description": "We advance rights and inclusion by centering youth leadership in policy discussions, campaigns, and systems change.",
+        "items": [
+          "Evidence-based advocacy research",
+          "Accessible policy engagement tools",
+          "Youth-led public platforms"
+        ]
+      },
+      {
+        "title": "Partnerships",
+        "description": "We work with national movements and civil society organizations to amplify disability-inclusive agendas.",
+        "items": [
+          "Strategy sessions with partners",
+          "Joint policy campaigns",
+          "Capacity-building for inclusive advocacy"
+        ]
+      },
+      {
+        "title": "National movements",
+        "description": "Our advocacy work is anchored in strong networks and movements that support social inclusion.",
+        "items": [
+          "Brave Movement Uganda",
+          "Girls Not Brides Uganda",
+          "CSSMUA"
+        ]
+      },
+      {
+        "title": "Youth Agents for Disability Inclusion (YADs)",
+        "description": "A movement of young activists who champion disability inclusion across communities and institutions.",
+        "items": [
+          "Leadership and advocacy training",
+          "Peer mobilization and campaigns",
+          "Public policy engagement"
+        ]
+      }
+    ],
+    "keyOutcomes": [
+      "Stronger advocacy networks",
+      "More inclusive policy conversations",
+      "Youth-led movement momentum"
+    ]
+  },
+  {
+    "slug": "talent-development",
+    "title": "Talent Development and Capacity Building",
+    "focusArea": "Talent Development and Capacity Building",
+    "summary": "We focus on mentorship, creativity, confidence-building, exposure, and opportunity for young talent with disabilities.",
+    "problem": "Young creatives and performers with disabilities often lack platforms, mentorship, and visibility to grow.",
+    "activities": [
+      "Mentorship and creative workshops",
+      "Media showcase events",
+      "Confidence-building training"
+    ],
+    "audience": [
+      "Young creatives with disabilities",
+      "Arts and media partners",
+      "Community cultural leaders"
+    ],
+    "outcomes": [
+      "Increased creative opportunities",
+      "Stronger confidence and self-expression",
+      "Expanded media and showcase exposure"
+    ],
+    "howToJoin": [
+      "Participate in talent development sessions",
+      "Attend the NBS After 5 showcase",
+      "Connect with our media partners"
+    ],
+    "coverImage": "https://res.cloudinary.com/dunddp3iw/image/upload/v1771261274/WhatsApp_Image_2026-02-16_at_7.19.37_PM_gtzamx.jpg",
+    "heroImage": "https://res.cloudinary.com/dunddp3iw/image/upload/v1771261274/WhatsApp_Image_2026-02-16_at_7.19.37_PM_gtzamx.jpg",
+    "gallery": [
+      "https://res.cloudinary.com/dunddp3iw/image/upload/v1771261328/WhatsApp_Image_2026-02-16_at_7.20.15_PM_xvblbo.jpg",
+      "https://res.cloudinary.com/dunddp3iw/image/upload/v1771261325/WhatsApp_Image_2026-02-16_at_7.20.14_PM_xywtpk.jpg"
+    ],
+    "sections": [
+      {
+        "title": "NBS After 5 music and talent showcase",
+        "description": "A flagship event spotlighting young performers with disabilities and giving them professional stage exposure.",
+        "items": [
+          "Live music and creative performance slots",
+          "Mentorship from industry professionals",
+          "Media coverage and audience engagement"
+        ]
+      },
+      {
+        "title": "Media showcase section",
+        "description": "We build visibility through storytelling, media partnerships, and accessible content that elevates talent.",
+        "items": [
+          "Video storytelling and social media features",
+          "Press partnerships for inclusive coverage",
+          "Digital portfolios for young artists"
+        ]
+      },
+      {
+        "title": "Confidence impact",
+        "description": "Our programs strengthen confidence, leadership, and creative identity for young people with disabilities.",
+        "items": [
+          "Public speaking and presentation coaching",
+          "Peer appreciation and talent recognition",
+          "Support for long-term creative pathways"
+        ]
+      }
+    ],
+    "keyOutcomes": [
+      "Improved creative confidence",
+      "Expanded media exposure",
+      "More inclusive mentorship opportunities"
+    ]
   }
 ]

@@ -13,6 +13,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/donate",
     "/news",
     "/contact",
+    "/board",
+    "/partners",
   ];
 
   return [

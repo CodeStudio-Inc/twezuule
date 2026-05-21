@@ -10,16 +10,18 @@ export async function generateStaticParams() {
   return focusAreas.map((area) => ({ slug: area.slug }));
 }
 
-export async function generateMetadata({ params }: { params: { slug: string } }) {
-  const area = getFocusAreaDetailBySlug(params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const area = getFocusAreaDetailBySlug(slug);
   if (!area) {
     return { title: "Focus area not found" };
   }
   return { title: area.title, description: area.description };
 }
 
-export default function FocusAreaPage({ params }: { params: { slug: string } }) {
-  const area = getFocusAreaDetailBySlug(params.slug);
+export default async function FocusAreaPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const area = getFocusAreaDetailBySlug(slug);
   if (!area) {
     notFound();
   }

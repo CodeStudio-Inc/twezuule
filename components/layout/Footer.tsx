@@ -1,23 +1,39 @@
 import Link from "next/link";
-import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Twitter, Mail, MapPin, Phone } from "lucide-react";
 import Container from "@/components/ui/Container";
 import { navigationLinks, socialLinks } from "@/lib/data";
 
 export default function Footer() {
   return (
-    <footer className="bg-navy-900 text-white/80">
+    <footer className="bg-navy-900 text-white/85">
       <Container className="py-16">
-        <div className="grid gap-10 md:grid-cols-3">
+        <div className="grid gap-10 xl:grid-cols-[1.4fr_1fr_1fr]">
           <div>
-            <h2 className="text-lg font-bold text-white">Twezuule Foundation</h2>
-            <p className="mt-4 text-sm leading-relaxed">
-              A youth-driven, disability-led organization empowering young people with disabilities to advocate for their
-              rights and access health and livelihood opportunities.
+            <p className="text-sm font-semibold uppercase tracking-[0.24em] text-accent-300">
+              Visit or Connect With Us
             </p>
+            <h2 className="mt-4 text-2xl font-bold text-white">Twezuule Foundation</h2>
+            <div className="mt-6 space-y-4 text-sm text-slate-200">
+              <p className="flex items-start gap-2">
+                <MapPin className="mt-0.5 h-4 w-4 text-accent-300" aria-hidden="true" />
+                Plot 260, Bukoto, Kampala, Uganda
+              </p>
+              <p className="flex items-start gap-2">
+                <Mail className="mt-0.5 h-4 w-4 text-accent-300" aria-hidden="true" />
+                <Link href="mailto:info@twezuule.org" className="transition hover:text-white">
+                  info@twezuule.org
+                </Link>
+              </p>
+              <p className="flex items-start gap-2">
+                <Phone className="mt-0.5 h-4 w-4 text-accent-300" aria-hidden="true" />
+                +256 771 442821
+              </p>
+            </div>
           </div>
+
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-wide text-white">Quick Links</h3>
-            <ul className="mt-4 space-y-2 text-sm">
+            <ul className="mt-4 space-y-2 text-sm text-slate-200">
               {navigationLinks.map((link) => (
                 <li key={link.href}>
                   <Link href={link.href} className="transition hover:text-white">
@@ -25,52 +41,50 @@ export default function Footer() {
                   </Link>
                 </li>
               ))}
+              <li>
+                <Link href="/board" className="transition hover:text-white">
+                  Board
+                </Link>
+              </li>
+              <li>
+                <Link href="/partners" className="transition hover:text-white">
+                  Partners
+                </Link>
+              </li>
             </ul>
           </div>
+
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wide text-white">Stay connected</h3>
-            <p className="mt-4 text-sm">Get updates on programs and opportunities.</p>
-            <form className="mt-4 flex gap-2" aria-label="Newsletter signup">
-              <label className="sr-only" htmlFor="newsletter-email">
-                Email address
-              </label>
-              <input
-                id="newsletter-email"
-                type="email"
-                placeholder="you@example.com"
-                className="flex-1 rounded-lg bg-white/10 px-4 py-2.5 text-sm text-white placeholder-white/40"
-              />
-              <button className="rounded-lg bg-accent-500 px-4 py-2.5 text-sm font-semibold text-navy-900 transition hover:bg-accent-400">
-                Subscribe
-              </button>
-            </form>
+            <h3 className="text-sm font-semibold uppercase tracking-wide text-white">Follow Us</h3>
+            <div className="mt-4 flex flex-wrap gap-3 text-white/70">
+              {socialLinks.map((link) => {
+                const Icon =
+                  link.label === "Facebook"
+                    ? Facebook
+                    : link.label === "Instagram"
+                      ? Instagram
+                      : link.label === "LinkedIn"
+                        ? Linkedin
+                        : Twitter;
+
+                return (
+                  <Link
+                    key={link.label}
+                    href={link.href}
+                    className="inline-flex items-center gap-2 rounded-full border border-white/10 px-3 py-2 text-sm transition hover:border-accent-300 hover:text-white"
+                    aria-label={link.label}
+                  >
+                    <Icon className="h-4 w-4" aria-hidden="true" />
+                    {link.label}
+                  </Link>
+                );
+              })}
+            </div>
           </div>
         </div>
-        <div className="mt-12 flex flex-col items-start justify-between gap-6 border-t border-white/10 pt-8 md:flex-row md:items-center">
-          <p className="text-sm">&copy; 2026 Twezuule Foundation. All rights reserved.</p>
-          <div className="flex gap-4">
-            {socialLinks.map((link) => {
-              const Icon =
-                link.label === "Facebook"
-                  ? Facebook
-                  : link.label === "Instagram"
-                    ? Instagram
-                    : link.label === "LinkedIn"
-                      ? Linkedin
-                      : Twitter;
 
-              return (
-                <Link
-                  key={link.label}
-                  href={link.href}
-                  className="text-white/50 transition hover:text-white"
-                  aria-label={link.label}
-                >
-                  <Icon className="h-5 w-5" />
-                </Link>
-              );
-            })}
-          </div>
+        <div className="mt-12 border-t border-white/10 pt-6 text-sm text-slate-400">
+          &copy; 2026 Twezuule Foundation. All rights reserved.
         </div>
       </Container>
     </footer>

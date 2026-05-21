@@ -31,6 +31,18 @@ export type Program = {
   outcomes: string[];
   howToJoin: string[];
   coverImage: string;
+  heroImage?: string;
+  gallery?: string[];
+  stats?: { label: string; value: string }[];
+  quote?: string;
+  quoteAuthor?: string;
+  keyOutcomes?: string[];
+  sections?: Array<{
+    title: string;
+    description: string;
+    items?: string[];
+    image?: string;
+  }>;
 };
 
 export type CaseStudy = {
